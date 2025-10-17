@@ -1,5 +1,3 @@
-AOS.init();
-
 //  Work experience cards
 
 const experiencecards = document.querySelector(".experience-cards");
@@ -40,7 +38,7 @@ const showCards2 = () => {
   exp.forEach(
     ({ title, cardImage, place, time, desp }) =>
       (output += `        
-    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
+    <div class="col gaap"> 
       <div class="card card1">
         <img src="${cardImage}" class="featured-image"/>
         <article class="card-body">

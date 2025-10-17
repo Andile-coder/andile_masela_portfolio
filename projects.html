@@ -43,7 +43,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="assets/css/preloader.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="assets/css/project.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/cursor.css">
@@ -313,6 +312,26 @@ add
         </div>
     </div>
 
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="slider-container">
+                <div class="slider" id="imageSlider">
+                    <!-- Images will be added dynamically -->
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <p id="modalDescription"></p>
+            <div class="modal-links">
+                <a id="modalPreview" href="#" target="_blank">Live Preview</a>
+                <a id="modalGithub" href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
      <!--Cursor-->
      <div class="cursor-dot-outline"></div>
      <div class="cursor-dot"></div>
@@ -324,7 +343,6 @@ add
     <script src="assets/js/cursor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/project.js"></script>
 </body>
 
