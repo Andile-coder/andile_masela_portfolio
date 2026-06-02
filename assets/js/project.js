@@ -5,6 +5,21 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "Northstar",
+    cardImage: "assets/images/project-page/northstar_1.png",
+    description:
+      "A full-stack product platform focused on clean user flows, authentication and dashboard-driven operations.",
+    tags: ["Full-stack", "Dashboard", "Authentication"],
+    featured: false,
+    images: [
+      "assets/images/project-page/northstar_1.png",
+      "assets/images/project-page/northstar_2.png",
+      "assets/images/project-page/northstar_3.png",
+    ],
+    Previewlink: "https://netstar-black.vercel.app/login",
+    Githublink: "https://github.com/Andile-coder/netstar",
+  },
+  {
     title: "Mosa AI (WhatsApp Exam Paper Assistant)",
     cardImage: "assets/images/project-page/mosa.png",
     description:
