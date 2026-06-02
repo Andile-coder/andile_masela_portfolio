@@ -1,6 +1,6 @@
 /* preloader */
 .no-scroll-preload {
-    overflow: hidden;
+    overflow: visible;
     height: auto;
 }
 
@@ -29,6 +29,11 @@
   align-items: center;
   z-index: 999999;
   color: white;
+}
+
+/* Lightweight mode: hide loader completely. */
+.loader-container {
+  display: none !important;
 }
 
 /* Atom */

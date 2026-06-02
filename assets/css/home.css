@@ -78,12 +78,8 @@ body{
 }
 
 .animated-text:after {
-  content: ".";
-  display: inline;
-  width: 6px;
-  text-indent: 0;
-  background: var(--col-icon);
-  animation: blink 0.3s infinite alternate;
+  content: "";
+  display: none;
 }
 .datawords{
   white-space: nowrap;

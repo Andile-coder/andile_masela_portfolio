@@ -25,6 +25,7 @@ let header = $(`
    <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="research.html">Research</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://medium.com/@maselaandile" target="_blank">Blogs</a></li>
    <li class="nav-item">
@@ -156,7 +157,7 @@ let footer = $(`
     
 
     <div class="rounded-social-buttons tag">
-    <a class="social-button twitter" href="https://twitter.com/Andi_Masela" target="_blank">
+    <a class="social-button twitter" href="https://x.com/Andi_Masela" target="_blank">
     <!-- SVG code for twitter icon -->
     <svg class="twitter-icon-footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500"
@@ -330,14 +331,6 @@ $(function () {
 });
 
 // Navbar current page highlight
-
-let loader = document.querySelector(".loader-container");
-
-window.addEventListener("load", vanish);
-
-function vanish() {
-  loader.classList.add("disappear");
-}
 $(function () {
   $("a.nav-link").each(function () {
     if ($(this).prop("href") == window.location.href) {
@@ -426,14 +419,6 @@ window.addEventListener("storage", function () {
   }
 });
 
-// Function to remove scroll bar during preload
-$(window).on("load", function () {
-  setTimeout(function () {
-    $(".no-scroll-preload").css("overflow", "visible");
-  }, 1000);
-  $(".loader-container").fadeOut(2500);
-});
-
 //send button animation
 
 $(function submitAnimation() {
@@ -459,18 +444,8 @@ $(function submitAnimation() {
       swal("Error !", "Please enter a valid message !", "error");
       return;
     } else {
-      setTimeout(function () {
-        $("#lnch").addClass("launching").text("Sending");
-        $("#lnch_btn").addClass("launching");
-      }, 0);
-      setTimeout(function () {
-        $("#lnch").addClass("launched").text("SENT");
-        $("#lnch_btn").addClass("launched");
-      }, 1500);
-      // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
-      setTimeout(() => {
-        document.querySelector("form").submit();
-      }, 2200);
+      // Lightweight mode: submit immediately (no button animations).
+      document.querySelector("form").submit();
     }
   });
 });

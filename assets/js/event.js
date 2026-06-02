@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  AOS.init();
+  // AOS disabled for lightweight mode.
   const eventswiper = document.querySelector(".swiper-wrapper");
   const event = [
     // eslint-disable-next-line linebreak-style

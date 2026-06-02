@@ -3,6 +3,20 @@
   src: url(../fonts/Agustina.woff);
 }
 
+/* Lightweight mode: disable CSS animations everywhere (lighter + faster). */
+*,
+*::before,
+*::after {
+  animation: none !important;
+  -webkit-animation: none !important;
+}
+
+/* Keep contact illustration visible in static mode. */
+svg#freepik_stories-smiley-face .animable {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 
 /*CSS variable declaration for light/dark mode*/
 

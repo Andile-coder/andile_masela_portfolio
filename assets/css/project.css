@@ -114,6 +114,21 @@ body.modal-open * {
   margin-top: 20px;
 }
 
+.modal-content .project-tag {
+  color: var(--text);
+  background: rgba(187, 134, 252, 0.18);
+}
+
+.project-details {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+  color: var(--text);
+}
+
+.project-details li {
+  margin-bottom: 6px;
+}
+
 .modal-links a {
   display: inline-block;
   margin-right: 15px;
@@ -128,11 +143,60 @@ body.modal-open * {
   background: #9562d3;
 }
 
+.freelance-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.freelance-card {
+  background: var(--bg);
+  border: 1px solid rgba(187, 134, 252, 0.35);
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.freelance-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.freelance-card a {
+  font-size: 13px;
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+.freelance-card a:hover {
+  color: #9562d3;
+}
+
+.freelance-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
 /* Project Card Styles */
+.projectcards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
 .column {
   float: left;
-  width: 33.33%;
-  padding: 5px;
+  width: calc((100% - 36px) / 3);
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .skill-card {
@@ -183,6 +247,40 @@ body.modal-open * {
   text-decoration: none;
 }
 
+.project-tags {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tag {
+  display: inline-block;
+  background: rgba(187, 134, 252, 0.25);
+  border: 1px solid rgba(187, 134, 252, 0.6);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.featured-badge {
+  background: #bb86fc;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
 .menu-content {
   margin: 0;
   padding: 0;
@@ -205,6 +303,10 @@ body.modal-open * {
 }
 
 @media (max-width: 768px) {
+  .projectcards {
+    gap: 12px;
+  }
+
   .column {
     width: 100%;
   }

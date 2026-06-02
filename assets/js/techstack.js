@@ -1,4 +1,4 @@
-AOS.init();
+// AOS disabled for lightweight mode.
 
 //  Tech Stacks cards
 

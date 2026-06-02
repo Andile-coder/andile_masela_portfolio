@@ -6,7 +6,7 @@ const exp = [
     title: "System Support Intern",
     cardImage: "assets/images/experience-page/tauSpace.jpeg",
     place: "TauSpace",
-    time: "(Jan, 2024 - present)",
+    time: "(Jan, 2024 - 2025)",
     desp: "<li>Engaged as a management Support Intern, providing assistance in the oversight and operations of the billing system.</li> ",
   },
   {

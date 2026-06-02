@@ -38,7 +38,7 @@ const references = [
   },
 ];
 
-AOS.init();
+// AOS disabled for lightweight mode.
 const fillData = () => {
   let output = "";
 
